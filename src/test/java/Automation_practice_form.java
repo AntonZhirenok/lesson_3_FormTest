@@ -46,7 +46,6 @@ public class Automation_practice_form {
         $(".modal-body").shouldHave(text("NCR Noida"));
         $("#closeLargeModal").click();
 
-        sleep(5000);
 
     }
 }
