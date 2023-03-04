@@ -5,7 +5,7 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
-public class AutomationPracticeForm { executeJavaScript
+public class AutomationPracticeForm {
 
     @Test
     public void formTest(){
@@ -49,7 +49,6 @@ public class AutomationPracticeForm { executeJavaScript
         $(".modal-body").shouldHave(text("Lenina street 174"));
         $(".modal-body").shouldHave(text("NCR Noida"));
         $("#closeLargeModal").click();
-
 
     }
 }
