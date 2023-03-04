@@ -5,7 +5,7 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
-public class Automation_practice_form {
+public class AutomationPracticeForm { executeJavaScript
 
     @Test
     public void formTest(){
@@ -13,6 +13,10 @@ public class Automation_practice_form {
         Configuration.browserSize = "1920x1080";
 
         open("https://demoqa.com/automation-practice-form");
+
+        executeJavaScript("$('#fixedban').remove()");
+        executeJavaScript("$('footer').remove()");
+
         $("#firstName").setValue("Zhirenok");
         $("#lastName").setValue("Anton");
         $("#userEmail").setValue("zhirenok@list.ru");
